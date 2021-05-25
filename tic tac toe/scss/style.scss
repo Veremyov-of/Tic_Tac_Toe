@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 50px 50px 50px;
+    font-family: sans-serif;
+    #score {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .score_inner{
+            font-size: 40px;
+            font-weight: 400;
+        }
+    }
+    #area {
+        width: 306px;
+        margin: 0 auto;
+        font-size: 0;
+        .cell {
+            margin: 5px;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            display: inline-block;
+            font-size: 40px;
+            border: 1.5px solid #000;
+            cursor: pointer;
+            vertical-align: middle;
+            transition: background .1s;
+            &:hover {
+                background-color: #F1F1F1;
+            }
+        }
+    }
+}
+
